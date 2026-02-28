@@ -1,0 +1,24 @@
+
+#
+# /etc/fstab
+# (Re)created by seonho on Fri Feb 27 17:41:67 2026
+# i accidentally overwrote it bc i used > not >> to append uuid :c
+# 
+# Accessible filesystems, by reference, are maintained under '/desv/disk/'.
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info.
+#
+# Ater editing this file, run systemctl daemon-reload' to update systemd
+# unit generated from this file.
+#
+
+/dev/mapper/rl-root				/				xfs	defaults	0 0
+UUID=b01239cc-e93d-4aa2-90a2-4a0beebc9e72	/boot				xfs	defaults	0 0
+/dev/mapper/rl-swap	none			swap					defaults	0 0
+
+UUID=fa769021-6f2d-491e-83e8-902aa8eb62db	/media/samba			xfs	defaults	0 0
+UUID=f9c23ac9-9fe4-4756-8d3c-759b0f3f8971	/media/nfs1			xfs	defaults	0 0
+UUID=7ad4a217-9fce-49ad-a7ca-9b06cc804fdf	/media/nfs2			xfs	defaults	0 0
+UUID=16fef106-8b97-4124-9db2-b5ba09e3e2b4	/media/samba1			xfs	defaults	0 0
+UUID=0b01222c-4309-4153-9769-f617ccd209a7	/media/samba2			xfs	defaults	0 0
+UUID=62a206c0-5d3c-4242-b4a0-c88f0464eecf	/media/samba3			xfs	defaults	0 0
+/dev/jjk/gojo					/media/lv_jjk			xfs	defaults	0 0
